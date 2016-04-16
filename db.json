@@ -1,0 +1,11 @@
+[{
+    "key": "value",
+    "key2": "value2"
+}, {
+    "key": "value",
+    "key2": "value2",
+    "arbitrary": "foo"
+}, {
+    "what": "ever",
+    "arbitrary": "foo"
+}]

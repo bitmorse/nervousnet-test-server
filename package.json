@@ -1,0 +1,19 @@
+{
+  "name": "nervousnet-test-server",
+  "author": "Sam Sulaimanov <sam@bitmorse.com>",
+  "license": "GPL-3.0",
+  "description": "Accepts POST requests and stores them. To get stored data, send a GET request.",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "NDDB": "^1.7.0",
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitmorse/nervousnet-test-server.git"
+  }
+}
