@@ -1,5 +1,5 @@
 # nervousnet-test-server
-Accepts POST requests and stores them. To get stored data, send a GET request. __ [Requires node](https://nodejs.org/en/download/package-manager).__
+Accepts POST requests and stores them. To get stored data, send a GET request. __[Requires node](https://nodejs.org/en/download/package-manager).__
 
 ## Installation
 
