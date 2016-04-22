@@ -7,6 +7,13 @@ var db = new NDDB();
 
 app.use(bodyParser.json());
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+
 app.get('/', function(req, res){
     var db_data = db.select('*', 'iLIKE', '%e%').fetch();
     res.writeHead(200, {'Content-Type': 'application/json'});
@@ -27,7 +34,7 @@ app.post('/', function(req, res){
     }
 });
 
-port = 3000;
+port = process.env.PORT;
 db.load('db.json', function() {
   console.log("Loaded json file into database");
   app.listen(port);
