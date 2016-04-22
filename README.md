@@ -23,3 +23,17 @@ Accepts POST requests and stores them. To get stored data, send a GET request. _
 - `nvm install 5.5.0`
 - `nvm use 5.5.0`
 - `nvm alias default v5.5.0`
+
+
+## Example JS code to post to server
+`$.ajax({
+        type:  'POST',
+        processData: false,
+        contentType: 'application/json',
+        data: '{"name": "Guillaume"}',
+        url: 'https://patrick-nervousnet-test-server-bitmorse.c9users.io:8080/',
+        success: function(json) {
+            console.log('/sayHello POST was successful.');
+            console.log(json);
+        }
+    });`
